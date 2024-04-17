@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>{% block title %} Themes {% endblock %}</h1>
+    {% for theme in themes %}
+        <div class='themes'>
+            <h3>#{{ theme[0] }} | {{ theme[1] }} | {{ theme[2] }}
+        </div>
+    {% endfor %}
+{% endblock %}
